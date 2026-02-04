@@ -186,7 +186,7 @@ points = PackedVector3Array(0.64353967, 0.049999997, 1.2326355, -0.67261904, 0.2
 center_of_mass_mode = 1
 script = ExtResource("1_ykkwu")
 STEER_LIMIT = 0.4
-engine_force_value = 200
+engine_force_value = 150
 
 [node name="FrontLeft" type="VehicleWheel3D" parent="." unique_id=1104543714]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.6, 0.3, 0.81)
