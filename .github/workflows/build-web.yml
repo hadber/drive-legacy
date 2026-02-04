@@ -9,7 +9,7 @@ jobs:
 
   export-web:
     name: Web Export
-    runs-on: self-hosted
+    runs-on: ubuntu-24.04
     container:
       image: barichello/godot-ci:4.6
     steps:
