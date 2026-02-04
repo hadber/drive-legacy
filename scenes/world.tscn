@@ -17,6 +17,7 @@ environment = ExtResource("1_rwgxs")
 
 [node name="hatchback-sports" parent="." unique_id=1435434776 instance=ExtResource("1_nnsk1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.109813, -0.5005791, -5.4613514)
+engine_force_value = 200
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=748200473]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.916286, -1.3200954, -11.674877)
