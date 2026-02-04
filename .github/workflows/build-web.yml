@@ -10,7 +10,11 @@ jobs:
   export-web:
     name: Web Export
     runs-on:
-      group: ubuntu-runners
+      - ubuntu-20.04
+      - ubuntu-22.04
+      - ubuntu-24.04
+      - ubuntu-latest
+      - ubuntu-slim
     container:
       image: barichello/godot-ci:4.6
     steps:
