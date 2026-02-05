@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://d3ogl8aq0ee6q" path="res://scenes/hatchback_sports.tscn" id="1_nnsk1"]
 [ext_resource type="Environment" uid="uid://chthaehvmiegd" path="res://assets/environment.tres" id="1_rwgxs"]
 [ext_resource type="PackedScene" uid="uid://c4epnireek3o4" path="res://assets/roads/road-straight.glb" id="3_4wyf3"]
+[ext_resource type="PackedScene" uid="uid://dptqk2vynqey2" path="res://scenes/track.tscn" id="4_k0juu"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nnsk1"]
 albedo_color = Color(0.7579507, 0.43086186, 0.5604484, 1)
@@ -16,12 +17,12 @@ data = PackedVector3Array(-46.246174, -0.5, 47.147724, -46.246174, -0.5, -47.147
 environment = ExtResource("1_rwgxs")
 
 [node name="hatchback-sports" parent="." unique_id=1435434776 instance=ExtResource("1_nnsk1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.109813, -0.5005791, -5.4613514)
+transform = Transform3D(0.17129295, 0, -0.98522013, 0, 1, 0, 0.98522013, 0, 0.17129295, -19.398111, 3.7075987, -42.115265)
 engine_force_value = 200
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=748200473]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.916286, -1.3200954, -11.674877)
-size = Vector3(92.49235, 1, 94.29545)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.38079, -1.3200954, -6.2050896)
+size = Vector3(216.64674, 1, 268.09918)
 material = SubResource("StandardMaterial3D_nnsk1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CSGBox3D" unique_id=815744792]
@@ -40,3 +41,5 @@ transform = Transform3D(-3.496911e-07, 0, -8, 0, 8, 0, 8, 0, -3.496911e-07, -14.
 
 [node name="road-straight4" parent="." unique_id=1734042641 instance=ExtResource("3_4wyf3")]
 transform = Transform3D(-3.496911e-07, 0, -8, 0, 8, 0, 8, 0, -3.496911e-07, -14.072544, -0.820096, -11.018061)
+
+[node name="Node3D" parent="." unique_id=272533486 instance=ExtResource("4_k0juu")]
